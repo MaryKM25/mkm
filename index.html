@@ -15,25 +15,24 @@
         }
         header {
             background: url('https://raw.githubusercontent.com/MaryKM25/mkm/main/SailingBackground.jpg') no-repeat center center/cover;
-            height: auto;
+            height: 60vh; /* Keeps the background image proportion */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
         h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             font-weight: bold;
             margin-bottom: 10px;
+            text-align: center;
         }
-        .content {
-            padding: 60px 20px;
-            background: #1069A0;
-            margin: 20px auto;
-            border-radius: 15px;
-            width: 80%;
+        .highlight {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #FFCC00;
+            margin-bottom: 20px;
         }
         .cta-button {
             background: #FFCC00;
@@ -45,10 +44,18 @@
             font-weight: bold;
             border-radius: 10px;
             box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.5);
+            text-decoration: none;
         }
         .cta-button:hover {
             background: #FFAA00;
             box-shadow: 0px 5px 20px rgba(255, 170, 0, 0.7);
+        }
+        .content {
+            padding: 60px 20px;
+            background: #1069A0;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 80%;
         }
         .form-container {
             background: #fff;
@@ -67,7 +74,7 @@
             border-radius: 5px;
             font-size: 1em;
         }
-        .footer {
+        footer {
             padding: 30px;
             background: #1069A0;
             font-size: 1.2em;
@@ -80,18 +87,15 @@
             border: 5px solid #FFCC00;
             margin-top: 20px;
         }
-        .highlight {
-            font-size: 2em;
-            font-weight: bold;
-            color: #FFCC00;
-            display: block;
-        }
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5em;
             }
             .cta-button {
                 font-size: 1.2em;
+            }
+            .content {
+                width: 90%;
             }
         }
     </style>
@@ -100,7 +104,7 @@
     <header>
         <h1>Steer Your Projects Like a Skilled Sailor!</h1>
         <p class="highlight">An Exclusive, Thrilling Bootcamp Experience Awaits You!</p>
-        <button class="cta-button" onclick="smoothScroll('waitlist')">Join the Waitlist NOW!</button>
+        <a href="#waitlist" class="cta-button">Join the Waitlist NOW!</a>
     </header>
 
     <section class="content about-me">
@@ -134,11 +138,11 @@
     <section class="content">
         <h2>Join the Waitlist – Don't Miss Out!</h2>
         <div id="waitlist" class="form-container">
-            <iframe src=https://docs.google.com/forms/d/e/1FAIpQLScayjxQrG50SZGf_Zk0-4B08Ca5Dgu4xnqpkFX2pI7CkE-qZQ/viewform?embedded=true width="100%" height="821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScayjxQrG50SZGf_Zk0-4B08Ca5Dgu4xnqpkFX2pI7CkE-qZQ/viewform?embedded=true" width="100%" height="821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer>
         <p>📩 <a href="mailto:mkm@gilawa.com" style="color: #FFCC00;">mkm@gilawa.com</a> | 📞 +357 95762245</p>
     </footer>
 
